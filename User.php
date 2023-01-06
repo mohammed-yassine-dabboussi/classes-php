@@ -105,6 +105,7 @@
                     if ( isset($_POST['register'])){
                         $user->register($_POST['login'], $_POST['password'], $_POST['email'], $_POST['firstname'], $_POST['lastname']);
                         echo "Félicitations, vous êtes bien inscrit !";
+                        
                     }
 
                    
