@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;800&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bolder;
+    background-color: rgb(180, 180, 180);
+}
+
+header{
+    background-color: rgb(0, 0, 0);
+    color: rgb(180, 180, 180);
+    display: flex;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;}
+
+.hGauche{
+    color : rgb(180, 180, 180);;
+    width: 30%;
+    padding: 2%;
+    display: flex;
+    justify-content: space-around;  
+}
+
+.hDroite{
+    width: 50%;
+    padding: 2%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.div_body{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div_milieu{
+    margin-top: 3%;
+    margin-left: 2%;
+    margin-bottom: 6%;
+    padding: 3%;
+    background-color: rgb(255, 0, 0);
+    color: rgb(180, 180, 180);
+    width: max-content;
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;  
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;}
+
+form input{
+    font-size: medium;
+    color: rgb(0, 0, 0);
+}
+
+form textarea{
+    font-size: medium;
+    color: rgb(0, 0, 0);
+}
+
+table {
+    border-spacing: 5px 1rem;
+    }
+td { 
+    border-spacing: 5px 1rem;
+    }
+
+th{
+    color:rgb(160, 0, 0);
+}
+
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(0, 0, 0);
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;    position: fixed;
+    bottom: 0; 
+    width: 100% ;   
+    color:rgb(180, 180, 180); 
+}
+
+.erreur{
+    color:rgb(160, 0, 0);
+}
+
+.validation{
+    color:rgb(0, 240, 44);
+}
+
+.poste{
+    color:rgb(211, 53, 0);
+}
+
