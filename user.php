@@ -162,6 +162,6 @@
         var_dump($user->Firstname());
 
     //Méthode Lastname
-    var_dump($user->Lastname());
+        var_dump($user->Lastname());
                 
 ?>
