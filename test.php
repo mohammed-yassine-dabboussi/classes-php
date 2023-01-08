@@ -54,6 +54,66 @@
             $exec_requete3 = $this->bdd->query($requete3);
         }
 
+        //Méthode isConnected
+
+        public function isConnected(){
+            $msg=false;
+            if ($_SESSION['user'][] != ""){
+                $msg=true;
+            }
+            return $msg;
+        }
+
+        //Méthode getAllInfos
+
+        public function getAllInfos(){
+            $requete4 = "SELECT * FROM `utilisateurs` WHERE `login`='abc'";
+            $exec_requete4 = $this->bdd->query($requete4);
+            $result_fetch_array = $exec_requete4 -> fetch_array(); 
+
+            return $result_fetch_array;
+        }
+
+        //Méthode getLogin
+
+        public function getLogin(){
+            $requete5 = "SELECT `login` FROM `utilisateurs` WHERE `firstname`='abc'";
+            $exec_requete5 = $this->bdd->query($requete5);
+            $result_fetch_array = $exec_requete5 -> fetch_array(); 
+
+            return $result_fetch_array;
+        }
+
+        //Méthode getEmail
+
+        public function getEmail(){
+            $requete6 = "SELECT `email` FROM `utilisateurs` WHERE `login`='abc'";
+            $exec_requete6 = $this->bdd->query($requete6);
+            $result_fetch_array = $exec_requete6 -> fetch_array(); 
+
+            return $result_fetch_array;
+        }
+
+        //Méthode getFirstname
+
+        public function getFirstname(){
+            $requete7 = "SELECT `firstname` FROM `utilisateurs` WHERE `login`='abc'";
+            $exec_requete7 = $this->bdd->query($requete7);
+            $result_fetch_array = $exec_requete7 -> fetch_array(); 
+
+            return $result_fetch_array;
+        }
+
+        //Méthode getLastname
+
+        public function getLastname(){
+            $requete8 = "SELECT `lastname` FROM `utilisateurs` WHERE `login`='abc'";
+            $exec_requete8 = $this->bdd->query($requete8);
+            $result_fetch_array = $exec_requete8 -> fetch_array(); 
+
+            return $result_fetch_array;
+        }
+
     }
     $login="";
     $password="";
@@ -83,8 +143,25 @@
     //Méthode supprimer
         $user->delete();   
 
-        
     //Méthode update
         $user->update($login, $password, $email, $firstname, $lastname);
+
+    //Méthode isConnected
+        $user->isConnected();
+
+    //Méthode getAllInfos
+        var_dump($user->getAllInfos());
+    
+    //Méthode Login
+        var_dump($user->getLogin());
+
+    //Méthode Email
+        var_dump($user->Email());
+
+    //Méthode Firstname
+        var_dump($user->Firstname());
+
+    //Méthode Lastname
+    var_dump($user->Lastname());
                 
 ?>
